@@ -1,0 +1,16 @@
+{
+  "name": "fivemnativebot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Xander Harrison",
+  "license": "ISC",
+  "dependencies": {
+    "discord-paginationembed": "^1.0.3",
+    "discord.js": "^11.5.1",
+    "request": "^2.88.0"
+  }
+}
