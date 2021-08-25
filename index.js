@@ -87,6 +87,13 @@ function FilterNatives(data, keyword) {
     }
   })
 
+  if (foundResults.length <= 0) {
+    data.channel.send(`No natives found with that filter keyword: ${keyword.toUpperCase()}`).then(msg => {
+      msg.delete(3000);
+    })
+    return;
+  }
+
   // Paginated Object Arrays
   const embedDataArray = [];
   foundResults.forEach(result => {
